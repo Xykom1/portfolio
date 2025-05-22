@@ -1,0 +1,78 @@
+body {
+    background: linear-gradient(135deg, #3a6186, #89253e);
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.veille {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.veille-title {
+    display: flex;
+    justify-content: center;
+}
+
+.veille-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f2a365;
+}
+
+.veille-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    color: #ddd;
+}
+
+.veilleTech-subtitle {
+    color: #007bff;
+}
+
+.veille-liste {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.veille-liste li {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.veille-liste li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.veille-liste li strong {
+    color: #f2a365;
+}
+
