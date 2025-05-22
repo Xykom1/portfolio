@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Affiche ou cache le bouton en fonction du défilement
     window.addEventListener("scroll", () => {
-        if (window.scrollY > 300) {
-            backToTopButton.classList.add("show");
+        if (window.scrollY > 50) {
+            backToTopButton.style.display = 'flex';
         } else {
-            backToTopButton.classList.remove("show");
+            backToTopButton.style.display = 'none';
         }
     });
 

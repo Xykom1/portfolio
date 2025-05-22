@@ -11,7 +11,6 @@ h1, h2, h3 {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -44,7 +43,6 @@ h1, h2, h3 {
 .certification-text {
     font-size: 1.2rem;
     line-height: 1.5;
-    max-width: 700px;
     margin: 0 auto 20px;
     color: #ddd;
 }
@@ -57,7 +55,225 @@ h1, h2, h3 {
     margin-top: 40px;
 }
 
-img {
-    width: 700px;
+#eye-visual {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.573);
+    padding: 6px;
+    color: white;
+    margin: 6.5px 162px;
+    transition: 0.2s linear;
+    border-radius: 5px;
 }
 
+#eye-visual:hover {
+    background-color: black;
+}
+
+#download {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 6px;
+    color: white;
+    margin: 6.5px 127px;
+    transition: 0.6s linear;
+    border-radius: 5px;
+}
+
+#download:hover {
+    background-color: black;
+}
+
+.btn---- {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 0px));
+    gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.show-2 {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border: 1px solid orange;
+    border-radius: 8px;
+    transition: 0.4s linear;
+}
+
+.show-2:hover {
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.595);
+}
+
+#img-cnil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 189px;
+    max-height: 1200px;
+    width: 267px;
+    max-width: 1200px;
+    border-radius: 0;
+    background-position: center;
+    object-fit: contain;
+    overflow: hidden;
+    zoom: 3;
+    border-radius: 10px;
+}
+
+#img-anssi {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: none;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 189px;
+    max-height: 1200px;
+    width: 267px;
+    max-width: 1200px;
+    border-radius: 0;
+    background-position: center;
+    object-fit: contain;
+    overflow: hidden;
+    zoom: 3;
+    border-radius: 10px;
+}
+
+#show-2 {
+    margin-top: 0;
+    margin-left: 7px;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    object-fit: cover;
+    box-shadow: none;
+    cursor: pointer;
+    filter: blur(0);
+    scale: 1.1;
+}
+
+#show-2:hover {
+    scale: 1.2;
+}
+
+.background-show-2 {
+    background-color: rgba(0, 0, 0, 0.434);
+    margin-top: -40px;
+    width: 200px;
+    height: 40px;
+    filter: blur(0);
+    transform: translateY(60px);
+    transition: 0.4s linear;
+}
+
+.show-2:hover .background-show-2 {
+    transform: translateY(0);
+
+}
+
+.modalshow-2 {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.845);
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+.modal-content-show-2 {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    height: 100vh;
+    width: 100vw;
+    cursor: auto;
+    padding: 0;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.222) rgba(0, 0, 0, 0);
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+#x-mark-show-2 {
+    position: absolute;
+    font-size: 40px;
+    top: 20px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.222);
+    cursor: pointer;
+    transition: 0.4s linear;
+}
+
+#x-mark-show-2:hover {
+    color: rgba(255, 255, 255, 0.663);
+}
+
+.minus_pus {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.549);
+    backdrop-filter: blur(15px);
+    padding: 5px;
+    border-radius: 100px;
+}
+
+.line {
+    position: absolute;
+    top: 5px;
+    right: 49%;
+    width: 1px;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.815);
+    backdrop-filter: blur(15px);
+}
+
+.zoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.zoom:hover {
+    color: white;
+}
+
+.dezoom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    padding: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.616);
+}
+
+.dezoom:hover {
+    color: white;
+}

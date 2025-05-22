@@ -11,7 +11,6 @@ h1, h2, h3 {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -44,7 +43,6 @@ h1, h2, h3 {
 .projet-text {
     font-size: 1.2rem;
     line-height: 1.5;
-    max-width: 700px;
     margin: 0 auto 20px;
     color: #ddd;
 }

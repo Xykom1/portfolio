@@ -13,7 +13,6 @@ h1, h2, h3 {
 }
 
 .container {
-    max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
 }
@@ -53,7 +52,7 @@ h1, h2, h3 {
 .parcours {
     margin-top: 30px;
     width: 100%;
-    max-width: 1280px;
+    max-width: 82.5rem;
 }
 
 .presentation-subtitle {
@@ -121,6 +120,11 @@ h1, h2, h3 {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
+    gap: 10px;
+}
+
+.download-btn .btn:first-of-type {
+    margin-right: 15px;
 }
 
 .download-btn .btn:hover {
